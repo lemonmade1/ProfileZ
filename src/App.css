@@ -1,0 +1,24 @@
+.title {
+  color: #333;
+  font-family: "Coda", sans-serif;
+  text-align: center;
+}
+
+.title span {
+  color: #55acee;
+}
+
+footer > h1 {
+  display: block;
+  text-align: center;
+  clear: both;
+  font-family: "Coda", sans-serif;
+  color: #343f3d;
+  line-height: 6;
+  font-size: 1.6em;
+}
+
+footer > h1 a {
+  text-decoration: none;
+  color: #ea4c89;
+}
