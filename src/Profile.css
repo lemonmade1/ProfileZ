@@ -3,6 +3,7 @@
   margin: auto;
 	width: 25em; 
   height: 11em;
+  /* height: auto; */
   background: #fff;
   border-radius: .3em;
 }
