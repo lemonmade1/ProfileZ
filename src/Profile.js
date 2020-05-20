@@ -12,10 +12,12 @@ const truncate = (str, words) => {
 const randInt = (min, max) => Math.floor(Math.random() * max) + min;
 
 class Profile extends Component {
-  constructor() {
-    super();
+  // constructor() {
+  //   super();
 
-    this.state = {
+    nextButton = React.createRef();
+
+    state = {
       username: '...',
       bio: '...',
       description: '...',
@@ -25,7 +27,7 @@ class Profile extends Component {
       friends: '...',
     }
 
-  }
+  // }
 
   componentDidMount() {
 
@@ -49,6 +51,7 @@ class Profile extends Component {
   }
 
   handleNext = () => {
+    this.nextButton.current.innerText = 'Again!'
     this.newUser();
   }
 
@@ -72,7 +75,7 @@ class Profile extends Component {
         </ul>
 
         <div>
-          <button onClick={this.handleNext}>Next</button>
+          <button ref={this.nextButton} onClick={this.handleNext}>Next</button>
         </div>
 
       </div>
